@@ -4,5 +4,20 @@ by: @ryanlabouve
 Summary:
 Random Name Generator!
 
+
+Instalation:
+Add names_data.js and needaname.js to your document. See index.html for an example.
+
+
+Usage:
+call the javascript needaname() function for generating a random name.
+
+
+
+@var - "male"  or "female" returns certain gender
+needaname (@var )
+
+
+
 Sources:
 *note* all of the names used in needaname are just examples. 
