@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>needaname</title>
+		<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="names_data.js"></script>
+		<script type="text/javascript" src="needaname.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#generated_name").text(needaname());
+				$("#new_name").on("click", function() {
+					$("#generated_name").text(needaname());
+				});
+			});
+		</script>
+		<style type="text/css">
+			.name {
+				background-color: rgba(100, 200, 0, .3);
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="span16">
+					<h1><a href="#">needaname?</a></h1>
+					<h2>How about <span id="generated_name" class="name"></span>?</h2>
+					<a href="#" id="new_name" class="btn">New Name</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
